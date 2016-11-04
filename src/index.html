@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/src/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Front App</title>
+    <base href="<%= APP_BASE %>">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- build:css lib/css/main.min.css -->
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/rdash-ui/dist/css/rdash.css">
+    <link rel="stylesheet" type="text/css" href="../src/app/main.css">
+    <!-- endbuild -->
+
+    <!-- inject:css -->
+    <!-- endinject -->
+</head>
+<body>
+
+
+<app>Loading...</app>
+
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+<script src="/node_modules/es6-shim/es6-shim.min.js"></script>
+<script src="/node_modules/systemjs/dist/system-polyfills.js"></script>
+
+<script src="/node_modules/systemjs/dist/system.src.js"></script>
+<script src="/node_modules/rxjs/bundles/Rx.js"></script>
+
+<!-- inject:js -->
+<!-- endinject -->
+
+<script src="../system.config.js"></script>
+<script> System.import('app').catch(function (err) {console.error(err);});
+</script>
+
+</body>
+</html>
